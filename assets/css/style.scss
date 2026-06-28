@@ -1,1 +1,36 @@
+---
+---
+@import "{{ site.theme }}";
 
+.site-logo {
+  max-width: 120px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin: 1rem 0 1.5rem;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  border-bottom-color: #fff;
+}
+
+.site-footer {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
