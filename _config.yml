@@ -3,3 +3,14 @@ logo: /assets/img/image.JPG
 #description: text below image
 show_downloads: true
 theme: jekyll-theme-minimal
+
+# Site navigation — add/remove/reorder pages here
+nav:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Projects
+    url: /projects/
+  - title: Contact
+    url: /contact/
