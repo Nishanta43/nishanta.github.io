@@ -3,72 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Nishanta Sharma - Portfolio</title>
-    <!-- Links to your SCSS file (GitHub Pages automatically compiles SCSS to CSS) -->
+    <title>Dr. Nishanta Sharma | Portfolio</title>
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header class="hero">
-        <div class="hero-content">
-            <!-- Ensure you upload a profile.jpg to your assets folder -->
-            <img src="assets/profile.jpg" alt="Dr. Nishanta Sharma" class="profile-img">
-            <h1>Dr. Nishanta Sharma</h1>
-            <p class="tagline">Quantitative Researcher | Statistical Modelling | Economic Modelling</p>
-            <div class="social-links">
-                <a href="Nishanta_Sharma_CV.pdf" target="_blank" class="btn"><i class="fas fa-file-pdf"></i> Resume</a>
-                <a href="https://github.com/Nishanta43" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/nsharmapkr/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://scholar.google.com/citations?user=DtCreuwAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i></a>
-                <a href="https://orcid.org/0000-0003-2801-2305" target="_blank"><i class="fab fa-orcid"></i></a>
-            </div>
-        </div>
-    </header>
-
-    <main class="container">
-        <section id="about" class="section">
-            <h2><i class="fas fa-user-circle"></i> About Me</h2>
-            <p>I am a dedicated researcher with a background in social science, specializing in qualitative research, health technology assessment, and cost-effectiveness. My work focuses on quantifying the impacts of environmental factors and climate change on public health—such as the future burden of Dengue, Melioidosis, and Zika—to drive sustainable, evidence-based adaptation strategies and Universal Health Coverage.</p>
-        </section>
-
-        <section id="experience" class="section">
-            <h2><i class="fas fa-briefcase"></i> Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Researcher</h3>
-                    <p class="meta">Health Intervention and Technology Assessment Program (HITAP) | Jan 2024 - Present</p>
-                    <p>Principal Investigator modeling climate change impacts on health and quantifying macroeconomic impacts of solarisation in Thailand using CGE modelling.</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Graduate Research & Teaching Assistant</h3>
-                    <p class="meta">Asian Institute of Technology (AIT) | Jan 2021 - Nov 2024</p>
-                    <p>Taught Quantitative Research Methods, guided over 100 graduate students in data analysis, and managed complex datasets for the Living Delta Hub Project.</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>Care Economy Researcher</h3>
-                    <p class="meta">UNESCAP | Sep 2023 - Dec 2023</p>
-                    <p>Contributed to the Beijing+30 synthesis informing regional policy and supported the Seventh Asian & Pacific Population Conference.</p>
+    <div class="layout-wrapper">
+        <!-- Left Sidebar: Profile -->
+        <aside class="sidebar">
+            <div class="profile-container">
+                <img src="assets/image Medium.jpeg" alt="Dr. Nishanta Sharma" class="profile-img">
+                <h1>Dr. Nishanta Sharma</h1>
+                <p class="username">Nishanta43</p>
+                <p class="bio">Quantitative Researcher | Statistical Modelling | Economic Modelling</p>
+                
+                <div class="social-links">
+                    <a href="Nishanta_Sharma_CV.pdf" target="_blank" class="btn-primary"><i class="fas fa-file-download"></i> Download CV</a>
+                    <div class="icon-links">
+                        <a href="https://github.com/Nishanta43" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/nsharmapkr/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://scholar.google.com/citations?user=DtCreuwAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="https://orcid.org/0000-0003-2801-2305" target="_blank" title="ORCID"><i class="fab fa-orcid"></i></a>
+                    </div>
                 </div>
             </div>
-        </section>
+        </aside>
 
-        <section id="education" class="section">
-            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-            <ul class="education-list">
-                <li>
-                    <strong>Ph.D. in Development and Sustainability</strong><br>
-                    Asian Institute of Technology (AIT), Thailand (2020 - 2024)<br>
-                    <em>Dissertation: Identifying Hazards and Developing Resilience for Sustainable Urban Tourism</em>
-                </li>
-                <li>
-                    <strong>Master of Science in Population, Gender and Development</strong> (2017 - 2019)
-                </li>
-            </ul>
-        </section>
-    </main>
+        <!-- Right Main Content -->
+        <main class="content">
+            
+            <!-- About Section -->
+            <section class="card fade-in">
+                <h2><i class="fas fa-terminal"></i> About</h2>
+                <p>I am a dedicated researcher with a background in social science, specializing in qualitative research, health technology assessment, and cost-effectiveness. My work leverages data processing (Python/R) and climate scenario-based assessments to drive evidence-based adaptation strategies and Universal Health Coverage.</p>
+            </section>
 
-    <footer>
-        <p>&copy; 2026 Dr. Nishanta Sharma. All rights reserved.</p>
-    </footer>
+            <!-- GitHub Repositories Section -->
+            <section class="fade-in">
+                <h2><i class="fas fa-code-branch"></i> Popular Repositories</h2>
+                <div class="repo-grid">
+                    
+                    <!-- Repo 1 -->
+                    <a href="https://github.com/Nishanta43/HITAP-Foundation_E2U" target="_blank" class="repo-card">
+                        <div class="repo-header">
+                            <h3><i class="far fa-bookmark"></i> HITAP-Foundation_E2U</h3>
+                            <span class="badge">Public</span>
+                        </div>
+                        <p class="repo-desc">All the codes for the project</p>
+                        <div class="repo-meta">
+                            <span class="language"><span class="dot lang-r"></span> R</span>
+                        </div>
+                    </a>
+
+                    <!-- Repo 2 -->
+                    <a href="https://github.com/Nishanta43/complete-guide-to-python-data-analysis-4571000" target="_blank" class="repo-card">
+                        <div class="repo-header">
+                            <h3><i class="far fa-bookmark"></i> complete-guide-to-python-data-analysis...</h3>
+                            <span class="badge">Public</span>
+                        </div>
+                        <p class="repo-desc">This repo is for the LinkedIn Learning course: Complete Guide to Python Data Analysis</p>
+                        <div class="repo-meta">
+                            <span class="language"><span class="dot lang-jupyter"></span> Jupyter Notebook</span>
+                        </div>
+                    </a>
+
+                    <!-- Repo 3 -->
+                    <a href="https://github.com/Nishanta43/LVCAppendicities" target="_blank" class="repo-card">
+                        <div class="repo-header">
+                            <h3><i class="far fa-bookmark"></i> LVCAppendicities</h3>
+                            <span class="badge">Public</span>
+                        </div>
+                        <p class="repo-desc">Project files and documentation.</p>
+                        <div class="repo-meta">
+                            <span class="language"><span class="dot lang-html"></span> HTML</span>
+                        </div>
+                    </a>
+
+                    <!-- Repo 4 -->
+                    <a href="https://github.com/Nishanta43/AN-Website" target="_blank" class="repo-card">
+                        <div class="repo-header">
+                            <h3><i class="far fa-bookmark"></i> AN-Website</h3>
+                            <span class="badge">Public</span>
+                        </div>
+                        <p class="repo-desc">Corporate website development for AN International.</p>
+                        <div class="repo-meta">
+                            <span class="language"><span class="dot lang-html"></span> HTML</span>
+                        </div>
+                    </a>
+
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="card fade-in">
+                <h2><i class="fas fa-briefcase"></i> Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Researcher</h3>
+                            <span class="date">HITAP | Jan 2024 - Present</span>
+                            <p>Principal Investigator modeling climate change impacts on health and quantifying macroeconomic impacts of solarisation in Thailand.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Graduate Research & Teaching Assistant</h3>
+                            <span class="date">AIT | Jan 2021 - Nov 2024</span>
+                            <p>Taught Quantitative Research Methods, guided over 100 graduate students in data analysis, and managed datasets for the Living Delta Hub Project.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
