@@ -1,9 +1,11 @@
-// Variables to match your aesthetic
-$primary-color: #054b03;
-$accent-color: #FFD700;
-$bg-color: #fffaf0;
-$text-color: #333;
-$font-stack: 'Georgia', serif;
+// GitHub Dark Mode Color Palette
+$bg-primary: #0d1117;
+$bg-secondary: #161b22;
+$border-color: #30363d;
+$text-primary: #c9d1d9;
+$text-secondary: #8b949e;
+$accent-blue: #58a6ff;
+$accent-hover: #1f6feb;
 
 * {
     box-sizing: border-box;
@@ -12,136 +14,262 @@ $font-stack: 'Georgia', serif;
 }
 
 body {
-    font-family: $font-stack;
-    background-color: $bg-color;
-    color: $text-color;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background-color: $bg-primary;
+    color: $text-primary;
     line-height: 1.6;
+    padding: 20px;
 }
 
-// Hero Section
-.hero {
-    background: linear-gradient(135deg, $primary-color 0%, #167513 100%);
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-    border-bottom: 4px solid $accent-color;
+.layout-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
 
+// Sidebar Profile Profile
+.sidebar {
+    flex: 1;
+    min-width: 280px;
+    max-width: 300px;
+    
+    @media (max-width: 768px) {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+.profile-container {
+    position: sticky;
+    top: 20px;
+    
     .profile-img {
-        width: 150px;
-        height: 150px;
+        width: 250px; // Fixed the massive image size issue
+        height: 250px;
         border-radius: 50%;
-        border: 3px solid $accent-color;
+        border: 2px solid $border-color;
         object-fit: cover;
         margin-bottom: 15px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        
+        @media (max-width: 768px) {
+            width: 150px;
+            height: 150px;
+        }
     }
 
     h1 {
-        font-size: 2.5rem;
-        margin-bottom: 5px;
+        font-size: 1.5rem;
+        color: #ffffff;
+        line-height: 1.2;
     }
 
-    .tagline {
-        font-style: italic;
-        color: #d4df9e;
+    .username {
+        font-size: 1.2rem;
+        color: $text-secondary;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+
+    .bio {
+        font-size: 1rem;
         margin-bottom: 20px;
-        font-size: 1.1rem;
     }
 }
 
-// Social Links
 .social-links {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 15px;
-    align-items: center;
-    flex-wrap: wrap;
-
-    a {
-        color: white;
-        font-size: 1.5rem;
-        text-decoration: none;
-        transition: transform 0.3s ease, color 0.3s ease;
-
-        &:hover {
-            color: $accent-color;
-            transform: translateY(-3px);
-        }
-    }
-
-    .btn {
-        background-color: $accent-color;
-        color: $primary-color;
+    
+    .btn-primary {
+        background-color: $bg-secondary;
+        color: $text-primary;
+        border: 1px solid $border-color;
         padding: 8px 16px;
-        font-size: 1rem;
-        font-weight: bold;
-        border-radius: 5px;
-        display: flex;
-        align-items: center;
-        gap: 8px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        text-align: center;
+        transition: 0.2s;
         
         &:hover {
-            background-color: white;
-            color: $primary-color;
+            background-color: $border-color;
+            border-color: $text-secondary;
+        }
+    }
+    
+    .icon-links {
+        display: flex;
+        gap: 15px;
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+        
+        a {
+            color: $text-secondary;
+            font-size: 1.5rem;
+            transition: color 0.2s;
+            
+            &:hover {
+                color: $accent-blue;
+            }
         }
     }
 }
 
-// Main Content
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 20px;
+// Main Content Area
+.content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
-.section {
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    margin-bottom: 30px;
-    border-left: 5px solid $primary-color;
-
+.card {
+    background-color: $bg-primary;
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 20px;
+    
     h2 {
-        color: $primary-color;
-        border-bottom: 1px solid $accent-color;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 15px;
         display: flex;
         align-items: center;
         gap: 10px;
+        border-bottom: 1px solid $border-color;
+        padding-bottom: 10px;
+    }
+}
+
+// Repo Grid
+.repo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.repo-card {
+    background-color: $bg-primary;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+    padding: 15px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, border-color 0.2s;
+    
+    &:hover {
+        border-color: $text-secondary;
+        transform: translateY(-2px);
+    }
+    
+    .repo-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        
+        h3 {
+            color: $accent-blue;
+            font-size: 1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            word-break: break-all;
+        }
+        
+        .badge {
+            font-size: 0.75rem;
+            border: 1px solid $border-color;
+            border-radius: 2em;
+            padding: 2px 7px;
+            color: $text-secondary;
+            white-space: nowrap;
+            margin-left: 10px;
+        }
+    }
+    
+    .repo-desc {
+        font-size: 0.85rem;
+        color: $text-secondary;
+        flex-grow: 1;
+        margin-bottom: 15px;
+    }
+    
+    .repo-meta {
+        font-size: 0.75rem;
+        color: $text-secondary;
+        
+        .language {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            
+            .dot {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                display: inline-block;
+                
+                &.lang-html { background-color: #e34c26; }
+                &.lang-jupyter { background-color: #DA5B0B; }
+                &.lang-r { background-color: #198CE7; }
+            }
+        }
     }
 }
 
 // Timeline
-.timeline-item {
-    margin-bottom: 20px;
+.timeline {
+    border-left: 2px solid $border-color;
+    margin-left: 10px;
+    padding-left: 20px;
     
-    h3 {
-        color: #167513;
-        margin-bottom: 5px;
-    }
-    
-    .meta {
-        font-style: italic;
-        color: #666;
-        font-size: 0.9rem;
-        margin-bottom: 10px;
+    .timeline-item {
+        position: relative;
+        margin-bottom: 25px;
+        
+        .timeline-dot {
+            position: absolute;
+            left: -27px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background-color: $border-color;
+            border-radius: 50%;
+            border: 2px solid $bg-primary;
+        }
+        
+        h3 {
+            color: $text-primary;
+            font-size: 1.1rem;
+            margin-bottom: 2px;
+        }
+        
+        .date {
+            font-size: 0.85rem;
+            color: $text-secondary;
+            display: block;
+            margin-bottom: 8px;
+        }
     }
 }
 
-.education-list {
-    list-style-type: none;
-    li {
-        margin-bottom: 15px;
-    }
+// Animations
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out;
 }
 
-// Footer
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: $primary-color;
-    color: white;
-    border-top: 1px solid $accent-color;
-    margin-top: auto;
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
