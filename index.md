@@ -17,9 +17,9 @@ layout: default
 
     <div class="expertise">
 
-      <div class="expertise-title">Expertise:</div>
+      <div class="expertise-title">Expertise</div>
 
-      <div>Climate Finance</div>
+      <div>Climate Economics</div>
       <div>Energy Economics</div>
       <div>Health Economics</div>
       <div>Environmental Economics</div>
@@ -39,10 +39,13 @@ layout: default
       <h2>About Me</h2>
 
       <p>
-        Researcher at the Health Intervention and Technology Assessment
-        Program Foundation (HITAP), Thailand. My work combines statistical
-        modelling, economic modelling, statistical analysis, and GIS
-        approaches to generate evidence for health, environmental, and
+        i. Work as Researcher at the Health Intervention and Technology
+        Assessment Program Foundation (HITAP), Thailand.
+      </p>
+
+      <p>
+        ii. My work combines Climate-Health-Economic modelling, and use of
+        GIS approaches to generate evidence for health, environmental, and
         economic policy.
       </p>
 
@@ -51,135 +54,483 @@ layout: default
 
     <section>
 
-      <h2>Let's Connect</h2>
+  <div class="connect-line">
 
-      <div class="connect-links">
+    <strong>Connect:</strong>
 
-        <a href="https://github.com/Nishanta43" target="_blank">GitHub</a>
+    <a href="https://github.com/Nishanta43" target="_blank">GitHub</a>
 
-        <a href="https://www.linkedin.com/in/nsharmapkr/" target="_blank">
-          LinkedIn
-        </a>
+    <a href="https://www.linkedin.com/in/nsharmapkr/" target="_blank">
+      LinkedIn
+    </a>
 
-        <a
-          href="https://scholar.google.com/citations?user=DtCreuwAAAAJ&hl=en"
-          target="_blank"
-        >
-          Google Scholar
-        </a>
+    <a
+      href="https://scholar.google.com/citations?user=DtCreuwAAAAJ&hl=en"
+      target="_blank"
+    >
+      Google Scholar
+    </a>
 
-        <a
-          href="https://orcid.org/0000-0003-2801-2305"
-          target="_blank"
-        >
-          ORCID
-        </a>
+    <a
+      href="https://orcid.org/0000-0003-2801-2305"
+      target="_blank"
+    >
+      ORCID
+    </a>
 
-        <a href="Nishanta_Sharma_CV.pdf" target="_blank">
-          Download CV
-        </a>
+    <a href="Nishanta_Sharma_CV.pdf" target="_blank">
+      Download CV
+    </a>
+
+  </div>
+
+</section>
+
+
+<section>
+
+  <div class="tabs">
+
+    <button class="tab-button active" onclick="openTab(event, 'projects')">
+      My Projects
+    </button>
+
+    <button class="tab-button" onclick="openTab(event, 'education')">
+      Education
+    </button>
+
+    <button class="tab-button" onclick="openTab(event, 'experience')">
+      Work Experience
+    </button>
+
+    <button class="tab-button" onclick="openTab(event, 'honors')">
+      Honors & Awards
+    </button>
+
+  </div>
+
+
+  <!-- MY PROJECTS TAB -->
+
+  <div id="projects" class="tab-content active">
+
+    <h2>My Projects</h2>
+
+    <div class="project-list">
+
+      <a
+        href="https://github.com/Nishanta43/Enery-Economics-Fossifuel-to-renewable-energy-transition"
+        target="_blank"
+        class="project-row"
+      >
+        <span>01</span>
+        <strong>Economic Impact of Fossil Fuel to Renewable Energy Transitionsing using CGE Model and Integrated Assessment Models</strong>
+        <span>View Repository →</span>
+      </a>
+
+
+      <a
+        href="https://github.com/Nishanta43/Climate-Change-and-Health-Economics"
+        target="_blank"
+        class="project-row"
+      >
+        <span>02</span>
+        <strong>Climate Change Impact on Healthcare Utilization and Health Systems</strong>
+        <span>View Repository →</span>
+      </a>
+
+
+      <a
+        href="https://github.com/Nishanta43/Microplastic-health-and-economic-evaluation"
+        target="_blank"
+        class="project-row"
+      >
+        <span>03</span>
+        <strong>Exposure to Microplastic, Health Impact and Economic Evaluation</strong>
+        <span>View Repository →</span>
+      </a>
+
+
+      <a
+        href="https://github.com/Nishanta43/Climate-health-and-demographic-nexus"
+        target="_blank"
+        class="project-row"
+      >
+        <span>04</span>
+        <strong>Climate, Health and Demographic Nexus</strong>
+        <span>View Repository →</span>
+      </a>
+
+
+      <a
+        href="https://github.com/Nishanta43/Carbonquest-Game"
+        target="_blank"
+        class="project-row"
+      >
+        <span>05</span>
+        <strong>CarbonQuest: Understanding Individual Level Carbon Footprint via Gaming Application</strong>
+        <span>View Repository →</span>
+      </a>
+
+
+      <a
+        href="https://github.com/Nishanta43/Internal-Air-Quality-Project"
+        target="_blank"
+        class="project-row"
+      >
+        <span>06</span>
+        <strong>Indoor Air Quality Assesment of Official Building in Thailand</strong>
+        <span>View Repository →</span>
+      </a>
+
+
+      <a
+        href="https://github.com/Nishanta43/LVCAppendicities"
+        target="_blank"
+        class="project-row"
+      >
+        <span>07</span>
+        <strong>Low Value Care: Case of Appendicities Surgery During Covid-19</strong>
+        <span>View Repository →</span>
+      </a>
+
+
+      <a
+        href="https://github.com/Nishanta43/Phd_logistic_regression"
+        target="_blank"
+        class="project-row"
+      >
+        <span>08</span>
+        <strong>Tourism, Climate and Disaster Management</strong>
+        <span>View Repository →</span>
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- EDUCATION TAB -->
+
+  <div id="education" class="tab-content">
+
+    <h2>Education</h2>
+
+  <div class="education-item">
+
+    <h3>
+      Doctor of Philosophy (Ph.D.) Program in Development and Sustainability
+    </h3>
+
+    <p class="education-meta">
+      Asian Institute of Technology, Thailand | 2020 – 2024
+    </p>
+
+    <ul>
+      <li>
+        <strong>Course overview:</strong>
+        Urban Environmental Management Systems; Climate Compatible and
+        Sustainable Infrastructure Development; Development Economics;
+        Forestry and REDD+
+      </li>
+
+      <li>
+        <strong>PhD Dissertation Title:</strong>
+        Identifying Hazards and Developing Resilience for Sustainable
+        Urban Tourism: A Case Study of Pokhara, Nepal
+      </li>
+    </ul>
+
+  </div>
+
+
+  <div class="education-item">
+
+    <h3>
+      Master of Science in Population, Gender and Development, Pokhara University, Nepal
+    </h3>
+
+    <p class="education-meta">ean 
+      2017 – 2019: Batch Topper, Received Dean List Awards (3.92/4 GPA)
+    </p>
+
+  </div>
+
+
+  <div class="education-item">
+
+    <h3>
+      Bachelors in Development Studies, Pokhara University, Nepal
+    </h3>
+
+    <p class="education-meta">
+      2012 – 2016, Received Dean List Awards (3.86/4 GPA)
+    </p>
+
+  </div>
+
+  </div>
+
+
+  <!-- WORK EXPERIENCE TAB -->
+
+  <div id="experience" class="tab-content">
+
+
+  <h2>Work Experience</h2>
+
+
+  <div class="experience-item">
+
+    <div class="experience-header">
+
+      <img
+        src="assets/logo/hitaplogo.png"
+        alt="HITAP Logo"
+        class="experience-logo"
+      >
+
+      <div>
+
+        <h3>
+          Health Intervention and Technology Assessment Program Foundation
+        </h3>
+
+        <p class="experience-meta">
+          Researcher; Full Time; Onsite | Jan 2024 – Ongoing
+        </p>
 
       </div>
 
-    </section>
+    </div>
+
+    <ul>
+
+      <li>
+        Principal Investigator for climate change impacts on health,
+        health systems, and economic implications using statistical,
+        machine learning, and GIS approaches; quantifying the economy-wide
+        macroeconomic impacts of solarisation in Thailand using CGE
+        modelling (Wellcome Trust funded); and systematically mapping
+        human epidemiological evidence linking microplastic exposure to
+        clinically measurable health outcomes.
+      </li>
+
+      <li>
+        Secured multi-source funding, including Thailand Science Research
+        and Innovation (TSRI) and Wellcome Trust.
+      </li>
+
+      <li>
+        Designed and delivered research methods and statistics training.
+      </li>
+
+      <li>
+        Established domestic and international partnerships through
+        participation in working groups on carbon/climate-health research
+        and policy integration.
+      </li>
+
+      <li>
+        Serves as an advisory board member for a Climate-Sensitive
+        Infectious Disease network group.
+      </li>
+
+    </ul>
+
+  </div>
 
 
-    <section>
+  <div class="experience-item">
 
-      <h2>My Projects</h2>
+    <div class="experience-header">
 
-      <div class="project-list">
+      <img
+        src="assets/logo/aitlogo.jpeg"
+        alt="AIT Logo"
+        class="experience-logo"
+      >
 
-        <a
-          href="https://github.com/Nishanta43/Enery-Economics-Fossifuel-to-renewable-energy-transition"
-          target="_blank"
-          class="project-row"
-        >
-          <span>01</span>
-          <strong>Energy Economics: Fossil Fuel to Renewable Energy Transition</strong>
-          <span>View Repository →</span>
-        </a>
+      <div>
 
+        <h3>
+          Asian Institute of Technology (AIT)
+        </h3>
 
-        <a
-          href="https://github.com/Nishanta43/Climate-Change-and-Health-Economics"
-          target="_blank"
-          class="project-row"
-        >
-          <span>02</span>
-          <strong>Climate Change and Health Economics</strong>
-          <span>View Repository →</span>
-        </a>
-
-
-        <a
-          href="https://github.com/Nishanta43/Microplastic-health-and-economic-evaluation"
-          target="_blank"
-          class="project-row"
-        >
-          <span>03</span>
-          <strong>Microplastic Health and Economic Evaluation</strong>
-          <span>View Repository →</span>
-        </a>
-
-
-        <a
-          href="https://github.com/Nishanta43/Climate-health-and-demographic-nexus"
-          target="_blank"
-          class="project-row"
-        >
-          <span>04</span>
-          <strong>Climate, Health and Demographic Nexus</strong>
-          <span>View Repository →</span>
-        </a>
-
-
-        <a
-          href="https://github.com/Nishanta43/Carbonquest-Game"
-          target="_blank"
-          class="project-row"
-        >
-          <span>05</span>
-          <strong>CarbonQuest Game</strong>
-          <span>View Repository →</span>
-        </a>
-
-
-        <a
-          href="https://github.com/Nishanta43/Internal-Air-Quality-Project"
-          target="_blank"
-          class="project-row"
-        >
-          <span>06</span>
-          <strong>Internal Air Quality Project</strong>
-          <span>View Repository →</span>
-        </a>
-
-
-        <a
-          href="https://github.com/Nishanta43/LVCAppendicities"
-          target="_blank"
-          class="project-row"
-        >
-          <span>07</span>
-          <strong>LVC Appendicities</strong>
-          <span>View Repository →</span>
-        </a>
-
-
-        <a
-          href="https://github.com/Nishanta43/Phd_logistic_regression"
-          target="_blank"
-          class="project-row"
-        >
-          <span>08</span>
-          <strong>PhD Logistic Regression</strong>
-          <span>View Repository →</span>
-        </a>
+        <p class="experience-meta">
+          Graduate Research and Teaching Assistant; Full Time; Onsite |
+          Jan 2021 – Nov 2024
+        </p>
 
       </div>
 
-    </section>
+    </div>
+
+    <ul>
+
+      <li>
+        <strong>Teaching Assistant:</strong>
+        Taught Quantitative Research Methods to 50+ MSc/PhD students;
+        achieved 100% pass rates and doubled average exam scores since
+        2021. Guided 100+ graduate students in data analysis and academic
+        writing.
+      </li>
+
+      <li>
+        <strong>Research Assistant:</strong>
+        Ran complex projects with 200+ variables for the Living Delta
+        Hub Project.
+      </li>
+
+      <li>
+        <strong>Student Assistant:</strong>
+        Co-developed MSc programs in Urban Development &amp; Sustainability;
+        created two EbA frameworks for National University of Laos;
+        contributed to UNEP climate finance deliverables.
+      </li>
+
+    </ul>
+
+  </div>
+
+
+  <div class="experience-item">
+
+    <div class="experience-header">
+
+      <img
+        src="assets/logo/UNESCAPlogo.png"
+        alt="UNESCAP Logo"
+        class="experience-logo"
+      >
+
+      <div>
+
+        <h3>
+          United Nations Economic and Social Commission for Asia and the Pacific (ESCAP)
+        </h3>
+
+        <p class="experience-meta">
+          Social Development Division Care Economy Researcher and Data
+          Representation | Sep 2023 – Dec 2023
+        </p>
+
+      </div>
+
+    </div>
+
+    <ul>
+
+      <li>
+        Contributed to Beijing+30 synthesis across five thematic areas,
+        informing regional policy.
+      </li>
+
+      <li>
+        Supported the Seventh Asian &amp; Pacific Population Conference
+        involving 54 member states; coordinated logistics and
+        cross-cultural communications.
+      </li>
+
+      <li>
+        Facilitated the Working Group on the Asian &amp; Pacific Decade
+        of Persons with Disabilities.
+      </li>
+
+    </ul>
+
+  </div>
+
+
+  <div class="experience-item">
+
+    <div class="experience-header">
+
+      <img
+        src="assets/logo/Government%20of%20Nepal%20(GON).jpeg"
+        alt="Government of Nepal Logo"
+        class="experience-logo"
+      >
+
+      <div>
+
+        <h3>
+          Government of Nepal (GON), Pokhara Metropolitan City Office
+        </h3>
+
+        <p class="experience-meta">
+          Social Development and Humanitarian Project Officer;
+          Full Time; Onsite | Jul 2016 – May 2020
+        </p>
+
+      </div>
+
+    </div>
+
+    <ul>
+
+      <li>
+        Implemented and maintained a comprehensive database for
+        650 street children and 10,000+ elderly pension recipients.
+      </li>
+
+      <li>
+        Coordinated with 80+ civil society organizations (CSOs) to
+        establish youth forums and ad hoc working groups.
+      </li>
+
+      <li>
+        Collaborated directly with the Municipality Mayor and 33 ward
+        members to institutionalize the Child-Friendly Local Governance
+        (CFLG) program.
+      </li>
+
+      <li>
+        Designed and executed innovative fundraising strategies,
+        including a strategic partnership with UNICEF Nepal, securing
+        USD 10,000.
+      </li>
+
+    </ul>
+
+  </div>
+
+  </div>
+
+
+  <!-- HONORS & AWARDS TAB -->
+
+  <div id="honors" class="tab-content">
+
+      <h2>Honors & Awards</h2>
+
+  <div class="awards-list">
+
+    <div class="award-item">
+      <strong>PhD Fellowship</strong>
+      <span>University Grants Commission (UGC), Nepal | August 2022</span>
+    </div>
+
+    <div class="award-item">
+      <strong>Asian Institute of Technology PhD Scholarship</strong>
+      <span>Asian Institute of Technology | August 2020</span>
+    </div>
+
+    <div class="award-item">
+      <strong>Dean's List Award</strong>
+      <span>Pokhara University | August 2019 & September 2016</span>
+    </div>
+
+    <div class="award-item">
+      <strong>Japan Student Services Organization (JASSO) Exchange Scholarship</strong>
+      <span>Kumamoto University, Japan</span>
+    </div>
+
+  </div>
+
+  </div>
+
+</section>
 
   </main>
 
